@@ -133,7 +133,7 @@ class WantedPhotoService {
 
                 // Save embedding (duplicates skipped internally)
                 if let savedURL = EmbeddingStore.shared.save(normalized, image: face) {
-                    print("✅ Saved embedding & face image at: \(savedURL.path)")
+//                    print("✅ Saved embedding & face image at: \(savedURL.path)")
                 } else {
                     print("⚠️ Duplicate face detected, skipping: \(urlStr)")
                 }
